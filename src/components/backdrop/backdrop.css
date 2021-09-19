@@ -1,0 +1,27 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: o;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #000000e1;
+}
+
+/* when the screen is to small, it will go to 90% and when to big to 50% */
+/* it will try to stay at 700px */
+/* mediaQuerries would take a lot more code */
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 300px);
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: orange;
+}
+/* not using styled components?! */
